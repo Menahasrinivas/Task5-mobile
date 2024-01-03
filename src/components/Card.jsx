@@ -71,7 +71,7 @@ function Card() {
                       <b>Quantity:</b>
                     </label>
                   </div>
-                  <div className="col-6">
+                  <div className="col-4">
                     <div className="input-group rounded-2" style={{ outline: '2px solid grey' }}>
                       <button type="button" className="input-group-text" onClick={() => handleDecrease(product.id, product.quantity || 1)}>
                         <b>-</b>
