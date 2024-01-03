@@ -1,12 +1,16 @@
 img{
+  
   height: 40vh !important;
   width: 100% !important;
 }
-.carousel-control-prev-icon {
+.cardbody{
+  background-color: aqua;
+}
+/* .carousel-control-prev-icon {
   background-color: black; 
 }
 
 .carousel-control-next-icon {
   background-color: black; 
-}
+} */
 

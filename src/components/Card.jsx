@@ -44,7 +44,7 @@ function Card() {
            
                 
               
-               <img src="{product.images[0]}" class="card-img-top" alt="product.title"></img>
+            <img src={product.images[0]} className="card-img-top" alt={product.title}></img>
               <div className="card-body">
              
                 <h5 className="card-title text-center" style={{ fontSize: '1.5em' }}>
