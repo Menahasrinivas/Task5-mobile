@@ -55,3 +55,21 @@ img{
 .bg-sandle{
   background-color: sandybrown;
 }
+
+//* Responsive Styles */
+
+@media (max-width: 768px) {
+  img {
+    height: auto !important;
+  }
+
+  .cardbody {
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-flex.justify-content-center button {
+    font-size: 16px;
+  }
+}
