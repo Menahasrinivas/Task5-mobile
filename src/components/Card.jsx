@@ -32,8 +32,37 @@ function Card() {
     }));
   };
 
+  const totalCartQuantity = user.products.reduce(
+    (total, product) => total + (product.quantity || 1),
+    0
+  );
+
+  const totalPrice = user.products.reduce(
+    (total, product) => total + (product.price * (product.quantity || 1)),
+    0
+  );
+
   return (
     <>
+<div className='bg-sandle rounded-4 text-center mb-5' style={{width:'100%',position:'sticky',top:'0',zIndex:'1',color:'white'}}>
+    <div className="row mt-4">
+        <div className="col-6">
+          <b>Total Cart Quantity:</b>
+        </div>
+        <div className="col-6 text-center">
+          <b className='btn btn-outline-light'>{totalCartQuantity}</b>
+        </div>
+      </div>
+      <div className="row mt-2 mb-4">
+        <div className="col-6">
+          <b>Total Price:</b>
+        </div>
+        <div className="col-6 text-center">
+          <button className='btn btn-outline-primary'>`${totalPrice}`</button>
+        </div>
+      </div>
+    </div>
+
       {user.products.map((product) => {
         // const carouselId = `carouselExample${product.id}`;
         const total = product.price * (product.quantity || 1);
