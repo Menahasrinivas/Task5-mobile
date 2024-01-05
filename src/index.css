@@ -56,7 +56,7 @@ img{
   background-color: sandybrown;
 }
 
-//* Responsive Styles */
+/* Responsive Styles */
 
 @media (max-width: 768px) {
   img {
